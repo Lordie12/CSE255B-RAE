@@ -1,0 +1,42 @@
+4-fold cross validation:
+
+Alpha = 0.3, Lambda = 0.01, 56 iterations
+20 Dimensional meaning-vector
+Convergence condition = difference of norms of theta vectors 
+Training set accuracy: 95.43% (classification at root node only, softmesax)
+Test set accuracy: 67.85% (classification at root node only, softmax)
+
+Modifications:
+Leaf nodes included for classification error
+Normalized derivative, tanh(a)/ ||tanh(a)|| used
+
+Bag of words model - no tree structure, only leaf nodes
+Alpha = 0 (no reconstruction), lambda, 20 dimensional meaning-vector
+Convergence condition = difference of norms of theta vectors
+Training set accuracy: 94.12%
+Test set accuracy: 66.09%
+
+Ten most negative words: (for tree structure model)
+mess
+tedious
+awful
+dreadful
+repellent
+entertainment
+stupid
+mediocre
+unsatisfying
+pretentious
+
+
+Ten most positive words: (for tree structure model)
+masterpiece
+compelling
+promising
+likable
+interesting
+entertaining
+wonderful
+poignant
+skillful
+brilliant
